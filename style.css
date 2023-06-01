@@ -27,6 +27,7 @@ hr {
     border-top: 3px solid #FCED94;
     margin: 1em auto;
     padding: 0;
+    margin-top: 40px;
 }
 
 hr2 {
@@ -42,6 +43,7 @@ hr2 {
 h1 {
     text-align: center;
     font-size: 38pt;
+    text-shadow: 3px 3px 3px black;
     text-decoration: underline;
     font-family: Georgia, Geneva, Tahoma, sans-serif;
 }
@@ -65,11 +67,6 @@ head {
     text-align: center;
 }
 
-img {
-    margin: auto;
-    display: block
-}
-
 .subhead{
     text-align: auto;
 }
@@ -79,8 +76,37 @@ h6 {
 }
 
 img {
+    margin: auto;
+    display: block;
     width: 150px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 20px 0 rgba(238, 152, 31, 0.6);
     text-align: center;
     padding: 5px;
-  }
+    padding-bottom: 20px;
+}
+
+.social-icons {
+    padding:30px;
+    background-color: #2f2f30;
+    text-align: center;
+}
+.social-icons a {
+    color:#ffffff;
+    line-height:30px;
+    font-size:30px;
+    margin: 0 5px;
+    text-decoration:none;
+
+}
+.social-icons a i {
+    line-height:30px;
+    font-size:30px;
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.social-icons a:hover i {
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
